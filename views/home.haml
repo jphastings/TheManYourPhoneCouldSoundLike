@@ -19,7 +19,7 @@
 						-locals['intros'].each_pair do |sex,note|
 							-note.each_pair do |clip,text|
 								-default ||= clip
-								%a{:href=>"##{clip}",:class=>sex,:title=>"Change this phrase"}=text
+								%a{:href=>"##{clip}",:class=>sex,:title=>"Change the intro phrase"}=text
 						%input{:type=>'hidden',:name=>'intro',:value=>default}
 					%input{:type=>'text',:name=>'number',:id=>'number',:value => "653-77423"}
 					#mids
@@ -27,7 +27,7 @@
 						-locals['mids'].each_pair do |sex,note|
 							-note.each_pair do |clip,text|
 								-default ||= clip
-								%a{:href=>"##{clip}",:class=>sex,:title=>"Change this phrase"}=text
+								%a{:href=>"##{clip}",:class=>sex,:title=>"Change the middle phrase"}=text
 						%input{:type=>'hidden',:name=>'mid',:value=>default}
 					%ul
 						-locals['reasons'].each_pair do |sex,note|
@@ -39,8 +39,14 @@
 						-locals['exits'].each_pair do |sex,note|
 							-note.each_pair do |clip,text|
 								-default ||= clip
-								%a{:href=>"##{clip}",:class=>sex,:title=>"Change this phrase"}=text
+								%a{:href=>"##{clip}",:class=>sex,:title=>"Change the ending phrase"}=text
 						%input{:type=>'hidden',:name=>'exit',:value=>default}
+					#flourishs
+						-default = nil
+						-locals['flourishes'].each_pair do |clip,text|
+							-default ||= clip
+							%a{:href=>"##{clip}",:title=>"Change the flourish"}=text
+						%input{:type=>'hidden',:name=>'flourish',:value=>default}
 					%input{:type=>'submit',:value=>'OldSpice up my answer phone',:class=>'submit'}
 			:markdown
 				And no ladies, I already have the phone numbers of every single one of you. I don't need to keep the ones you type in here.

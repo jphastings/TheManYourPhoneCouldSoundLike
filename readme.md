@@ -6,6 +6,5 @@ I saw [this](http://www.youtube.com/user/oldspice#p/u/7/Kx-78v6WLN8) and, bored 
 Todo
 ----
 * Remove ID3 data without introducing clicks & pops to the final product
-* Do some real CSS
-* Link to OldSpice somehow, so as not to anger the legal department
+* Convince someone I'm quite good at this coding lark & get a job
 * Buy some OldSpice

@@ -52,7 +52,7 @@ input.submit {
 	margin-top:10px;
 }
 
-form div {
+#intros,#mids {
 	display:inline;
 }
 
@@ -85,7 +85,7 @@ form a:hover {
 	border-bottom:1px dotted #666;
 }
 
-#intros a:first-child,#mids a:first-child,#exits a:first-child  {
+#intros a:first-child,#mids a:first-child,#exits a:first-child,#flourishs a:first-child  {
 	display:inline;
 }
 

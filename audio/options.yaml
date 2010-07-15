@@ -23,6 +23,7 @@ reasons:
         n7: building an orphanage for children with their bare hands while playing a sweet, sweet lullaby for those children with two mallets against their abs xylophone
         n8: ripping out mass-loads of weights
         n9: on Reddit
+        n10: working on the means of teleportation so we can talk in person
 exits:
     female:
         fexit1: but she'll get back to you as soon as she can.
@@ -34,3 +35,5 @@ flourishes:
     flourish3: I'm on a horse.
     flourish4: SWAN DIVE.
     flourish5: Doo Doo doo Doo doo Doo DOO Doo
+    #flourish6: Oh my GOD.
+    pause: <em>&lt;no flourish&gt;</em>
