@@ -1,0 +1,32 @@
+* {
+	font-family: georgia;
+}
+
+body {
+	padding-bottom:50px;
+}
+
+img.isiah {
+	float:right;
+	width:400px;
+}
+
+blockquote input.multi {
+	display:block;
+}
+
+#footer {
+	position:fixed;
+	bottom: 0px;
+	left:0px;
+	right:0px;
+	background-color: #eee;
+	border-top:1px solid #ccc;
+	color:#aaa;
+	padding:0 5px;
+	text-align:center;
+}
+
+#footer a {
+	color: #666;
+}
