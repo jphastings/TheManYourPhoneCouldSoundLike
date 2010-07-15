@@ -24,6 +24,7 @@ reasons:
         n8: ripping out mass-loads of weights
         n9: on Reddit
         n10: working on the means of teleportation so we can talk in person
+        n11: winning exotic car-throwing competitions
 exits:
     female:
         fexit1: but she'll get back to you as soon as she can.
@@ -35,5 +36,9 @@ flourishes:
     flourish3: I'm on a horse.
     flourish4: SWAN DIVE.
     flourish5: Doo Doo doo Doo doo Doo DOO Doo
-    #flourish6: Oh my GOD.
+    flourish6: Oh my GOD.
+    theme: <em>&lt;OldSpice theme&gt;</em>
     pause: <em>&lt;no flourish&gt;</em>
+    holler: Holler.
+    freshfish: I can however offer you this. It's a freshwater fish. I caught it just for you.
+    silverfish: Silverfish hand catch!
