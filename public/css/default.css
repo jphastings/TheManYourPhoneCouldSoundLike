@@ -40,3 +40,52 @@ blockquote input.multi {
 #footer a {
 	color: #666;
 }
+
+ul {
+	margin:10px 0 10px 10px;
+	list-style:none;
+	padding:0;
+}
+
+input.submit {
+	display:block;
+	margin-top:10px;
+}
+
+form div {
+	display:inline;
+}
+
+form a {
+	color: #000;
+	text-decoration:none;
+	display:none;
+	border-style:solid;
+	border-width:0px 0px 0px 3px;
+	padding-left:2px;
+}
+
+form a.female {
+	border-color: #ff7e94;
+}
+
+form a.male {
+	border-color: #3b5998;
+}
+
+form a.neutral {
+	border-color: #4fb555;
+}
+
+form a.wrongsex {
+	color: #aa0000;
+}
+
+form a:hover {
+	border-bottom:1px dotted #666;
+}
+
+#intros a:first-child,#mids a:first-child,#exits a:first-child  {
+	display:inline;
+}
+

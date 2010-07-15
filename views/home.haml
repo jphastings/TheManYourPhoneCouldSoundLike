@@ -3,16 +3,8 @@
 	%head
 		%title Hello Ladies...
 		%link{:type=>"text/css", :rel=>"stylesheet", :href=>"/css/default.css"}
-		-#%script{:type=>'text/javascript',:src=>'http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'}
-		-#:javascript
-		-#	window.addEvent('domready', function() {
-		-#		$('#number').addEvent('keydown',function(m) {
-		-#			if (m.key.test(/[^0-9\ \-]/) && !m.key.test('backspace')) {
-		-#				m.stop()
-		-#			}
-		-#		})
-		-#	})
-		
+		%script{:type=>'text/javascript',:src=>'/assets/jquery.min.js'}
+		%script{:type=>'text/javascript',:src=>'/assets/site.js'}
 	%body
 		#content
 			%img{:src=>"/images/isiah.jpg",:title => "The man your man could smell like",:alt => "Photo of the man your phone could sound like",:class=>'isiah'}
@@ -20,42 +12,44 @@
 			%h2
 				This is the man your
 				%a{:href=>'http://www.youtube.com/user/oldspice#p/u/7/Kx-78v6WLN8',:taget=>'youtube'}phone could sound like
-			:markdown
-				
 			%blockquote
 				%form{:method=>'get',:action=>'/message'}
-					Hello callers, the lovely <em>slash</em> talented <em>slash</em> intelligent and beautiful <em>slash</em> sophisticated lady at
+					#intros
+						-default = nil
+						-locals['intros'].each_pair do |sex,note|
+							-note.each_pair do |clip,text|
+								-default ||= clip
+								%a{:href=>"##{clip}",:class=>sex,:title=>"Change this phrase"}=text
+						%input{:type=>'hidden',:name=>'intro',:value=>default}
 					%input{:type=>'text',:name=>'number',:id=>'number',:value => "653-77423"}
-					is unable to take your call. She's busy:
-					%table
-						%tr
-							%td
-								%input{:type=>'radio',:name=>'reason',:value=>'c',:selected =>true} riding a horse backwards with me
-						%tr
-							%td
-								%input{:type=>'radio',:name=>'reason',:value=>'d'} listening to me read romantic poetry while I make a bouquet of paper flowers from each read page
-						%tr
-							%td
-								%input{:type=>'radio',:name=>'reason',:value=>'a'} ingesting my delicious OldSpice man-smell
-						%tr
-							%td
-								%input{:type=>'radio',:name=>'reason',:value=>'e'} being serenaded on the moon with a view of the earth whilst surviving on the oxygen in my lungs via a passionate kiss
-						%tr
-							%td
-								%input{:type=>'radio',:name=>'reason',:value=>'b'} enjoying a delicious lobster dinner I prepared just for her while carrying her on my back safely through piranha infested waters
-					but she'll get back to you as soon as she can. Thanks for calling.
-					%br
-					%input{:type=>'submit',:value=>'OldSpice up my answer phone'}
+					#mids
+						-default = nil
+						-locals['mids'].each_pair do |sex,note|
+							-note.each_pair do |clip,text|
+								-default ||= clip
+								%a{:href=>"##{clip}",:class=>sex,:title=>"Change this phrase"}=text
+						%input{:type=>'hidden',:name=>'mid',:value=>default}
+					%ul
+						-locals['reasons'].each_pair do |sex,note|
+							-note.each_pair do |clip,text|
+								%li{:class=>sex}
+									%input{:type=>'radio',:name=>'reason',:value=>clip}=text
+					#exits
+						-default = nil
+						-locals['exits'].each_pair do |sex,note|
+							-note.each_pair do |clip,text|
+								-default ||= clip
+								%a{:href=>"##{clip}",:class=>sex,:title=>"Change this phrase"}=text
+						%input{:type=>'hidden',:name=>'exit',:value=>default}
+					%input{:type=>'submit',:value=>'OldSpice up my answer phone',:class=>'submit'}
 			:markdown
 				And no ladies, I already have the phone numbers of every single one of you. I don't need to keep the ones you type in here.
-				
-				PS. Ladies, I have two tickets to that thing you love right now, but I'll be sure to improve this page soon.
 				
 				<object width="640" height="385"><param name="movie" value="http://www.youtube.com/v/Kx-78v6WLN8&amp;hl=en_GB&amp;fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Kx-78v6WLN8&amp;hl=en_GB&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object>
 				
 		#footer
 			:markdown
-				Made [by JP](http://byJP.me) without endorsement by or affiliation with [OldSpice](http://oldspice.com) or [Isiah Mustafa](http://twitter.com/isaiahmustafa).<br/><small>Yes they will probably ask me to take this down soon, which is their right (I don't own the audio…) so enjoy!</small>
+				Made [by JP](http://byJP.me) without endorsement by or affiliation with [OldSpice](http://oldspice.com) or [Isiah Mustafa](http://twitter.com/isaiahmustafa).<br/><small>Please <a href="oldspice@toys.byJP.me">get in touch</a> if there are any YouTube videos with good audio clips for this. Code <a href="github.com/jphastings/TheManYourPhoneCouldSoundLike">on github</a>.</small>
 		:javascript
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-17463188-1']);

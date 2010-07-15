@@ -1,0 +1,36 @@
+intros:
+    female:
+        fintro1: Hello callers, the lovely <em>slash</em> talented <em>slash</em> intelligent and beautiful <em>slash</em> sophisticated <strong>lady</strong> at
+    male:
+        nintro1: Hello, you have dialled
+mids:
+    male:
+        mmid1: the tall accomplished <strong>man</strong> you're calling can't come to the phone right now because they're
+    female:
+        fmid1: is unable to take your call. She's busy
+reasons:
+    male:
+        m1: cracking walnuts with their man-mind
+    female:
+        f1: enjoying a delicious lobster dinner I prepared just for her while carrying her on my back safely through piranha infested waters
+    neutral:
+        n1: ingesting my delicious OldSpice man-smell
+        n2: riding a horse backwards with me
+        n3: listening to me read romantic poetry while I make a bouquet of paper flowers from each read page
+        n4: being serenaded on the moon with a view of the earth whilst surviving on the oxygen in my lungs via a passionate kiss
+        n5: piloting a zepelin over a bacon factory        
+        n6: polishing their monocle smile
+        n7: building an orphanage for children with their bare hands while playing a sweet, sweet lullaby for those children with two mallets against their abs xylophone
+        n8: ripping out mass-loads of weights
+        n9: on Reddit
+exits:
+    female:
+        fexit1: but she'll get back to you as soon as she can.
+    neutral:
+        nexit1: but leave a message and they'll return your call as soon as possible.
+flourishes:
+    flourish1: This voicemail is now diamonds.
+    flourish2: I'm on a phone.
+    flourish3: I'm on a horse.
+    flourish4: SWAN DIVE.
+    flourish5: Doo Doo doo Doo doo Doo DOO Doo
